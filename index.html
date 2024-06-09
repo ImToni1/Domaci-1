@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+    .vrh{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        background-color: #313131;
+    }
+    .ic{
+        width: 80%;
+        height: 5vh;
+        display: flex;
+        margin-left: 50px;
+    }
+    .iko{
+        height: 5vh;
+        width: 60%;
+    }
+    .tekst{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-size: larger;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        font-size: 20px;
+    }
+    .st{
+        margin-left: 10px;
+    }
+    .st1{
+        height: 5vh;
+        width: 50%;
+        object-fit: contain;
+    }
+    .st:hover{
+        color: #bdbdbd;
+    }
+    .sredina{
+        background-image: url(Slike/aaaa.png);
+        width: 100%;
+        background-repeat: no-repeat;
+	    background-attachment: fixed;
+	    background-size: cover;
+        height: 65vh;
+        
+    }
+    .lo{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .upisi{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .a1:hover{
+        color: #8e8d8d;
+    }
+    .a1{
+        margin-left: 10px;
+    }
+    .loo{
+        height: 100%;
+        width: 55%;
+    }
+    .logo{
+        height: 10vh;
+        padding: 5px;
+    }
+    .tipke{
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+    }
+    .a2{
+        background-color: #C50707;
+        width: 20%;
+        margin-top: 5px;
+        padding: 5px;
+        border: 1px solid white;
+    }
+    .a2:hover{
+        background-color: #890404;
+    }
+    .aa{
+        width: 100%;
+        height: 25vh;
+    }
+    .dole{
+        width: 100%;
+        height: 50vh;
+
+    }
+    .crvena{
+        background-color: #f72121;
+        border: 1px solid black;
+    }
+    .prvi{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-left: 15px;
+        height: 50vh;
+    }
+    .lje{
+        width: 49%;
+        padding: 5px;
+        padding-top: 15px;
+        height: 100%;
+    }
+    .desno{
+        width: 49%;
+        padding: 5px;
+        padding-top: 15px;
+        height: 100%;
+    }
+    .v1{
+        padding: 5px;
+    }
+    .v2{
+        padding: 5px;
+        width: 90%;
+        height: 30vh;
+    }
+    .v1:hover{
+	    transform: scale(1.05);
+    }
+    .maleak{
+        width: 100%;
+        height: 100%;
+    }
+    .v4:hover{
+	    transform: scale(1.05);
+    }
+    .v5:hover{
+	    transform: scale(1.05);
+    }
+    .v4{
+        margin-top: 10px;
+        height: 100px;
+        margin-left: 10px;
+        width: 200px;
+        display: inline-block;
+    }
+    .v5{
+        margin-left: 50px;
+        display: inline-block; 
+        margin-top: 10px;
+        height: 100px;
+        width: 200px;
+    }
+    .v3{
+        height: 100px;
+        width: 200px;
+    }
+    .doleee{
+        height: 110vh;
+        width: 100%;
+    }
+    .naslov2{
+        margin-top: 100px;
+        margin-left: 200px;
+        font-size: 40px;
+    }
+    .naslov3{
+        margin-top: 50px;
+        margin-left: 200px;
+        font-size: 40px;
+    }
+    .slika1,.slika2{
+        display: inline-block;
+        width: 49.70%; 
+        overflow: hidden;
+        vertical-align: top;
+    }
+    .slika3{
+        margin-top: 20px;
+        overflow: hidden;
+        
+    }
+    .sli{
+        padding-top: 20px;
+        width: 100%;
+        margin: 5px;
+        height: 400px;
+        
+    }
+    .sli2{
+        padding: 10px;
+        width: 100%;
+        overflow: hidden;
+        height: 400px;
+    }
+
+    .sli:hover{
+        transform: scale(1.05);
+    }
+    .sli2:hover{
+        transform: scale(1.05);
+    }
+    .dno{
+        width: 100%;
+        height: 60vh;
+        background-color: #313131;
+    }
+    .logo2{
+        padding: 20px;
+        height: 10vh;
+    }
+    .kon{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        font-size: 25px;
+    }
+    .kontakt1{
+        display: flex;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+    }
+    .kontakt{
+        display: flex;
+        margin-left: 150px;
+        padding: 30px;
+        color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tex{
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .je{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    .je:hover{
+        color: #8e8d8d;
+    }
+    </style>
+</head>
+<body>
+    <div class="vrh">
+            <div class="ic">
+            <a href="https://www.tiktok.com/@universityvern?lang=en" target="_blank"><img class="iko" src="Slike/tiktok.svg" alt=""></a>
+            <a href="https://www.instagram.com/vern_university/?hl=en" target="_blank"><img class="iko" src="Slike/insta.svg" alt=""></a>
+            <a href="https://hr.linkedin.com/school/vern'%E2%80%8B-university/" target="_blank"><img class="iko" src="Slike/link.svg" alt=""></a>
+            <a href="https://www.youtube.com/user/VERNuniversity" target="_blank"><img class="iko" src="Slike/yt.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100064558815216" target="_blank"><img class="iko" src="Slike/face.svg" alt=""></a>
+            </div>
+            <div class="tekst">
+                <a class="st" href=""><img class="st1" src="Slike/ser.svg" alt=""></a>
+                <a class="st" href="stud.html" target="_blank">Studomatic</a> 
+                <a class="st" href="">Nastaweb</a>
+                <a class="st" href="#dole1">Kontakti</a>
+            </div>
+    </div>
+    <div class="sredina">
+        <div class="lo">
+            <div class="loo">
+            <img class="logo" src="Slike/VERN-logo-HIGH-RES-e1556270074639-768x230.jpg" alt="">
+            </div>
+            <div class="upisi">
+                <a class="a1" href="">Upisi</a>
+                <a class="a1" href="#dole">Studiji</a>
+                <a class="a1" href="">Studenti</a>
+                <a class="a1" href="">Cjeloživotno obrazovanje</a>
+            </div>
+        </div>
+        <div class="aa"></div>
+    <div class="tipke">
+        <p>Aktivni upisi na studije <br> Prijediplomski studiji, početak nastave u listopadu:</p>
+        <a class="a2" href="">OTVORENI SAT 15.06.</a>
+        <a class="a2" href="">PRISTUPNI POSTUPAK 28.05. i 15.06.</a>
+        <a class="a2" href="">UPIS PRIJELAZNIKA</a>
+    </div>
+    </div>
+    <div class="dole">
+        <div class="prvi">
+            <div class="lje">
+                <h2 class="nas"><span class="crvena">&nbsp;</span> Aktualno</h2>
+                <div class="v1">
+                    <img class="v2" src="Slike/aaaaaaaa.jpg" alt="">
+                    <p>Film „Šutim“ naše Sare Horvatić među finalistima ovogodišnjeg French Riviera Film Festivala</p>
+                    
+                </div>
+                <div class="v4">
+                    <img class="v3" src="Slike/sl2.jpg" alt="">
+                    <p>Čestitamo našim studentima – viceprvacima Hrvatske u stolnom tenisu</p>
+                </div>
+                <div class="v5">
+                    <img class="v3" src="Slike/sl3.jpg" alt="">
+                    <p>Pozivamo vas na tradicionalni VERN’ov proljetni roštilj subota 8. lipnja 2024.</p>
+                </div>
+                <div class="v5">
+                    <img class="v3" src="Slike/sl4.jpg" alt="">
+                    <p>Američki studenti novinarstva s Colorado State University gostovali na VERN’u</p>
+                </div>
+            </div>
+            <div class="desno">
+                <h2 class="nas"><span class="crvena">&nbsp;</span> Događanja</h2>
+                <div class="v1">
+                    <img class="v2" src="Slike/sl5.jpg" alt="">
+                    <p>Otvorene prijave za radionicu i pitching forum „Let’s pitch some shorts!“</p>
+                </div>
+                <div class="v4">
+                    <img class="v3" src="Slike/sl8.jpg" alt="">
+                    <p>Prijave za LEAP Pre-Summit bootcamp – 13. i 14. svibnja 2024.</p>
+                </div>
+                <div class="v5">
+                    <img class="v3" src="Slike/sl6.jpg" alt="">
+                    <p>Nestle praksa za VERN’ove studente „Nestlé Summer’s Cool 2024“</p>
+                </div>
+                <div class="v5">
+                    <img class="v3" src="Slike/sl7.jpg" alt="">
+                    <p>Ernst & Young vas poziva na ljetnu školu „Summer Tax Academy“</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doleee">
+        <div class="stui" id="dole">
+            <h2 class="naslov2"><span class="crvena">&nbsp;</span> Studiji</h2>
+            <div class="slika1">
+                <a href="studiji.html" target="_blank"><img class="sli" src="Slike/dip.png" alt=""></a>
+            </div>
+            <div class="slika2">
+                <a href="studiji.html" target="_blank"><img class="sli" src="Slike/pred.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="cij">
+            <h2 class="naslov3"><span class="crvena">&nbsp;</span> Cjeloživotno obrazovanje</h2>
+            <div class="slika3">
+                <a href="https://vern.hr/cjelozivotno-obrazovanje/" target="_blank"><img class="sli2" href="https://vern.hr/cjelozivotno-obrazovanje/" src="Slike/cije.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="dno">
+        <img class="logo2" src="Slike/VERN-logo-HIGH-RES-e1556270074639-768x230.jpg" alt="">
+        <div class="kon">
+            <div class="kontakt1">
+                <h2>KONTAKT</h2>
+                <div class="tex" id="dole1"><a class="je" href="">Palmotićeva 82/1 </a><a class="je" href=""> 10 000 Zagreb </a><a class="je" href="">Hrvatska</a></div>
+            </div> 
+            <div class="kontakt">
+                <h2>STUDIJI</h2>
+                <div class="tex"><a class="je" href="">Prijediplomski studiji </a><a class="je" href="">Diplomski studiji</a><a class="je" href=" https://vern.hr/cjelozivotno-obrazovanje/">Cjeloživotno obrazovanje</a></div>
+            </div>
+            <div class="kontakt">
+                <h2>O NAMA</h2>
+                <div class="tex"><a class="je" href="https://vern.hr/upisi/">Upisi</a><a class="je" href="">Studiji</a><a class="je" href="https://vern.hr/studenti/">Studenti</a></div> 
+            </div>
+            <div class="kontakt">
+                <h2>OSTALO</h2>
+                <div class="tex"><a class="je" href="https://vern.hr/zastita-osobnih-podataka/">Zaštita osobnih podataka</a><a class="je" href="https://vern.hr/posao-na-vernu/">Posao na VERN'u</a><a class="je" href="https://vern.hr/o-vernu/"> O VERN'u</a> </div>
+            </div>
+            
+
+        </div>
+    </div>
+</body>
+</html>
